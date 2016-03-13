@@ -1,8 +1,13 @@
 # About folders & files:
-1. `keras_detect.py`: the python file to process data & generate 5-fold training and testing datasets.
+1. `Code`: contains the code & lib
 2. `Data`: contains the category and original/correct/error utterances (each file is one column from Maxine's data)
-3. `keras-master`: the keras library
 
 # Running Instructions
-1. `cd` to the repository & run `python keras_detect.py`, the python file will generate 5-fold training and testing data under the same folder
-2. `cd` to `keras-master/examples` and check the input path in `imdb_lstm.py`(line 40-43), run `python imdb_lstm.py` 
+## To run deep learning algorithm
+1. `cd` to the `Code` folder & run `python keras_detect.py`, the python file will generate 5-fold training and testing data under `train_test_datasets` folder
+2. `cd` to `Code` folder and check the input path in `DataForm.py`; run `python lstm.py` 
+
+## To run sk-learn logistic regression algorithm
+1. `cd` to the `Code` folder & open `sklearn_lr_detect.py` file
+2. Change the input file path in line 30~34, if needed; change the parameter of `get_utterances` function in line 42, 48, 53, if needed
+3. Run `python sklearn_lr_detect.py`
