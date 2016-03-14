@@ -2,10 +2,10 @@ import cPickle
 
 class DataForm:
     def load(self):
-        X_test = cPickle.load(open("error_train_test_datasets_bow3gram/test_X_4.cPickle"))
-        Y_test = cPickle.load(open("error_train_test_datasets_bow3gram/test_y_4.cPickle"))
-        X_train = cPickle.load(open("error_train_test_datasets_bow3gram/train_X_4.cPickle"))
-        Y_train = cPickle.load(open("error_train_test_datasets_bow3gram/train_y_4.cPickle"))
+        X_test = cPickle.load(open("error_train_test_datasets_bow3gram/test_X_0.cPickle"))
+        Y_test = cPickle.load(open("error_train_test_datasets_bow3gram/test_y_0.cPickle"))
+        X_train = cPickle.load(open("error_train_test_datasets_bow3gram/train_X_0.cPickle"))
+        Y_train = cPickle.load(open("error_train_test_datasets_bow3gram/train_y_0.cPickle"))
 
         X_test = self.chageX(X_test)
         X_train = self.chageX(X_train)

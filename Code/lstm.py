@@ -446,7 +446,7 @@ def pred_error(f_pred, prepare_data, data, iterator, verbose=False):
 
 
 def train_lstm(
-    dim_proj=300,  # word embeding dimension and LSTM number of hidden units.
+    dim_proj=750,  # word embeding dimension and LSTM number of hidden units.
     patience=10,  # Number of epoch to wait before early stop if no progress
     max_epochs=5000,  # The maximum number of epoch to run
     dispFreq=400,  # Display to stdout the training progress every N updates
